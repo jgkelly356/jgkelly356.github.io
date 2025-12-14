@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>YOUR NAME | Engineering Portfolio</title>
+  <meta name="description" content="Engineering portfolio for YOUR NAME." />
+  <style>
+    :root { --bg:#0b0f19; --card:#121a2a; --text:#e8eefc; --muted:#a9b6d3; --accent:#7aa2ff; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; background:var(--bg); color:var(--text); }
+    a { color:var(--accent); text-decoration:none; }
+    a:hover { text-decoration:underline; }
+    .wrap { max-width: 920px; margin: 0 auto; padding: 32px 20px 60px; }
+    header { display:flex; gap:18px; align-items:flex-start; justify-content:space-between; flex-wrap:wrap; }
+    .title h1 { margin:0; font-size: 34px; letter-spacing: 0.2px; }
+    .title p { margin:10px 0 0; color:var(--muted); line-height:1.4; max-width: 70ch; }
+    .links { display:flex; gap:12px; flex-wrap:wrap; }
+    .pill { display:inline-block; padding:10px 12px; border:1px solid rgba(255,255,255,0.12); border-radius: 999px; background: rgba(255,255,255,0.03); }
+    .pill:hover { border-color: rgba(122,162,255,0.7); }
+    hr { border:0; border-top: 1px solid rgba(255,255,255,0.10); margin: 26px 0; }
+    h2 { margin: 0 0 10px; font-size: 18px; letter-spacing: 0.2px; }
+    .grid { display:grid; grid-template-columns: 1fr; gap:14px; }
+    @media (min-width: 820px) { .grid { grid-template-columns: 1fr 1fr; } }
+    .card { background: var(--card); border:1px solid rgba(255,255,255,0.10); border-radius: 16px; padding: 16px 16px 14px; }
+    .card h3 { margin: 0 0 6px; font-size: 16px; }
+    .card p { margin: 0 0 10px; color: var(--muted); line-height: 1.45; }
+    .meta { color: var(--muted); font-size: 13px; display:flex; gap:10px; flex-wrap:wrap; }
+    .badge { padding: 4px 8px; border-radius: 999px; background: rgba(122,162,255,0.12); border:1px solid rgba(122,162,255,0.22); }
+    footer { margin-top: 26px; color: var(--muted); font-size: 13px; }
+    .small { font-size: 13px; color: var(--muted); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="title">
+        <h1>YOUR NAME</h1>
+        <p>
+          Aerospace / Mechanical Engineering student. Interested in controls, propulsion, and systems engineering.
+          Currently seeking <strong>Summer 2026 Internship</strong>.
+        </p>
+        <p class="small">University of Alabama • Huntsville / Remote • Email: YOUR EMAIL</p>
+      </div>
+      <div class="links">
+        <a class="pill" href="LINKEDIN URL" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a class="pill" href="RESUME PDF URL (optional)" target="_blank" rel="noreferrer">Resume (PDF)</a>
+        <a class="pill" href="GITHUB URL (optional)" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+    </header>
+
+    <hr/>
+
+    <section>
+      <h2>Projects</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>PROJECT 1 TITLE</h3>
+          <div class="meta">
+            <span class="badge">Controls</span>
+            <span class="badge">MATLAB/Simulink</span>
+          </div>
+          <p>
+            1–2 sentences: what you built + the point of it. Add one measurable result if you can (tracking error, response time, test success rate, etc.).
+          </p>
+          <div class="meta">
+            <a href="PROJECT LINK (optional)" target="_blank" rel="noreferrer">Link</a>
+            <span>•</span>
+            <a href="SLIDES/PDF (optional)" target="_blank" rel="noreferrer">Slides</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>PROJECT 2 TITLE</h3>
+          <div class="meta">
+            <span class="badge">Propulsion</span>
+            <span class="badge">Modeling</span>
+          </div>
+          <p>
+            1–2 sentences: what it is, what tools, and what you learned.
+          </p>
+          <div class="meta">
+            <a href="PROJECT LINK (optional)" target="_blank" rel="noreferrer">Link</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>PROJECT 3 TITLE</h3>
+          <div class="meta">
+            <span class="badge">Aerospace</span>
+            <span class="badge">Systems</span>
+          </div>
+          <p>
+            Keep it short. You can add detail later; the goal now is credibility + clarity.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>PROJECT 4 TITLE</h3>
+          <div class="meta">
+            <span class="badge">Data / Optimization</span>
+          </div>
+          <p>
+            Optional. Only include what you can explain quickly in an interview.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <hr/>
+
+    <section>
+      <h2>Skills</h2>
+      <p class="small">
+        MATLAB/Simulink • Python • Controls (PID, root locus, Bode/Nyquist) • Aero/propulsion fundamentals • CAD (if applicable) • Git
+      </p>
+    </section>
+
+    <hr/>
+
+    <section>
+      <h2>About</h2>
+      <p class="small">
+        3–5 lines max. What you’re looking for + what you like working on + what kind of teams/problems you thrive in.
+      </p>
+    </section>
+
+    <footer>
+      Last updated: <span id="date"></span>
+    </footer>
+  </div>
+
+  <script>
+    const d = new Date();
+    document.getElementById("date").textContent = d.toLocaleDateString(undefined, { year:"numeric", month:"short", day:"numeric" });
+  </script>
+</body>
+</html>
