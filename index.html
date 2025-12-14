@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>YOUR NAME | Engineering Portfolio</title>
-  <meta name="description" content="Engineering portfolio for YOUR NAME." />
+  <title>Joseph Kelly | Engineering Portfolio</title>
+  <meta name="description" content="Engineering portfolio for Joseph Kelly." />
   <style>
     :root { --bg:#0b0f19; --card:#121a2a; --text:#e8eefc; --muted:#a9b6d3; --accent:#7aa2ff; }
     * { box-sizing: border-box; }
@@ -14,7 +14,7 @@
     .wrap { max-width: 920px; margin: 0 auto; padding: 32px 20px 60px; }
     header { display:flex; gap:18px; align-items:flex-start; justify-content:space-between; flex-wrap:wrap; }
     .title h1 { margin:0; font-size: 34px; letter-spacing: 0.2px; }
-    .title p { margin:10px 0 0; color:var(--muted); line-height:1.4; max-width: 70ch; }
+    .title p { margin:10px 0 0; color:var(--muted); line-height:1.4; max-width: 72ch; }
     .links { display:flex; gap:12px; flex-wrap:wrap; }
     .pill { display:inline-block; padding:10px 12px; border:1px solid rgba(255,255,255,0.12); border-radius: 999px; background: rgba(255,255,255,0.03); }
     .pill:hover { border-color: rgba(122,162,255,0.7); }
@@ -25,7 +25,7 @@
     .card { background: var(--card); border:1px solid rgba(255,255,255,0.10); border-radius: 16px; padding: 16px 16px 14px; }
     .card h3 { margin: 0 0 6px; font-size: 16px; }
     .card p { margin: 0 0 10px; color: var(--muted); line-height: 1.45; }
-    .meta { color: var(--muted); font-size: 13px; display:flex; gap:10px; flex-wrap:wrap; }
+    .meta { color: var(--muted); font-size: 13px; display:flex; gap:10px; flex-wrap:wrap; align-items:center; }
     .badge { padding: 4px 8px; border-radius: 999px; background: rgba(122,162,255,0.12); border:1px solid rgba(122,162,255,0.22); }
     footer { margin-top: 26px; color: var(--muted); font-size: 13px; }
     .small { font-size: 13px; color: var(--muted); }
@@ -35,17 +35,19 @@
   <div class="wrap">
     <header>
       <div class="title">
-        <h1>YOUR NAME</h1>
+        <h1>Joseph Kelly</h1>
         <p>
-          Aerospace / Mechanical Engineering student. Interested in controls, propulsion, and systems engineering.
-          Currently seeking <strong>Summer 2026 Internship</strong>.
+          Aerospace &amp; Mechanical Engineering student with interests spanning dynamics, propulsion,
+          systems modeling, and applied optimization. Seeking a <strong>Summer 2026 Internship</strong>.
         </p>
-        <p class="small">University of Alabama • Huntsville / Remote • Email: YOUR EMAIL</p>
+        <p class="small">University of Alabama (Tuscaloosa) • Remote / Relocation • Email: <a href="mailto:jgkelly356@gmail.com">jgkelly356@gmail.com</a></p>
       </div>
+
       <div class="links">
-        <a class="pill" href="LINKEDIN URL" target="_blank" rel="noreferrer">LinkedIn</a>
-        <a class="pill" href="RESUME PDF URL (optional)" target="_blank" rel="noreferrer">Resume (PDF)</a>
-        <a class="pill" href="GITHUB URL (optional)" target="_blank" rel="noreferrer">GitHub</a>
+        <!-- Replace these links when ready -->
+        <a class="pill" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a class="pill" href="#" target="_blank" rel="noreferrer">Resume</a>
+        <a class="pill" href="https://github.com/jgkelly356" target="_blank" rel="noreferrer">GitHub</a>
       </div>
     </header>
 
@@ -55,54 +57,96 @@
       <h2>Projects</h2>
       <div class="grid">
         <div class="card">
-          <h3>PROJECT 1 TITLE</h3>
+          <h3>CubeSat Drag Sail Payload – BAMA-2</h3>
           <div class="meta">
+            <span class="badge">Systems</span>
+            <span class="badge">Testing</span>
             <span class="badge">Controls</span>
-            <span class="badge">MATLAB/Simulink</span>
           </div>
           <p>
-            1–2 sentences: what you built + the point of it. Add one measurable result if you can (tracking error, response time, test success rate, etc.).
+            Led design and validation of a deployable drag-sail payload for a CubeSat mission.
+            Conducted vacuum-chamber testing, reliability iterations, and subsystem validation,
+            achieving &gt;95% functional reliability after redesign.
           </p>
           <div class="meta">
-            <a href="PROJECT LINK (optional)" target="_blank" rel="noreferrer">Link</a>
-            <span>•</span>
-            <a href="SLIDES/PDF (optional)" target="_blank" rel="noreferrer">Slides</a>
+            <!-- Add links later if you want -->
+            <span>Links available upon request</span>
           </div>
         </div>
 
         <div class="card">
-          <h3>PROJECT 2 TITLE</h3>
+          <h3>Turbojet Engine Dynamic Model &amp; Control</h3>
           <div class="meta">
             <span class="badge">Propulsion</span>
             <span class="badge">Modeling</span>
+            <span class="badge">MATLAB/Simulink</span>
           </div>
           <p>
-            1–2 sentences: what it is, what tools, and what you learned.
+            Developed a dynamic turbojet engine model with thermal and nozzle states, integrated
+            with a multi-loop control architecture. Focused on system-level behavior, transient
+            response, and physically consistent engine modeling.
           </p>
           <div class="meta">
-            <a href="PROJECT LINK (optional)" target="_blank" rel="noreferrer">Link</a>
+            <span>Links available upon request</span>
           </div>
         </div>
 
         <div class="card">
-          <h3>PROJECT 3 TITLE</h3>
+          <h3>Interplanetary Flyby &amp; Hohmann Transfer Optimization Tool</h3>
           <div class="meta">
+            <span class="badge">Orbital Mechanics</span>
             <span class="badge">Aerospace</span>
-            <span class="badge">Systems</span>
+            <span class="badge">Modeling</span>
           </div>
           <p>
-            Keep it short. You can add detail later; the goal now is credibility + clarity.
+            Built a computational tool to evaluate optimal Hohmann transfers using inner-planet
+            flybys to exit the solar system toward outer planets. Analyzed excess velocity vectors,
+            transfer geometry, and mission-feasible departure conditions.
           </p>
+          <div class="meta">
+            <span>Links available upon request</span>
+          </div>
         </div>
 
         <div class="card">
-          <h3>PROJECT 4 TITLE</h3>
+          <h3>Monte Carlo Inventory Optimization – misFITS</h3>
           <div class="meta">
-            <span class="badge">Data / Optimization</span>
+            <span class="badge">Simulation</span>
+            <span class="badge">Data Analysis</span>
+            <span class="badge">Optimization</span>
           </div>
           <p>
-            Optional. Only include what you can explain quickly in an interview.
+            Performed Monte Carlo simulations to model shoe-size distributions and mismatch
+            pairing in a data-driven retail concept. Used probabilistic analysis to inform stocking
+            strategy and reduce inventory waste.
           </p>
+          <div class="meta">
+            <span>Links available upon request</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr/>
+
+    <section>
+      <h2>In Progress / Upcoming</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Autonomous Multirotor Payload Delivery – DBVF Senior Design</h3>
+          <div class="meta">
+            <span class="badge">Systems Integration</span>
+            <span class="badge">Flight Test</span>
+            <span class="badge">Autonomy</span>
+          </div>
+          <p>
+            Senior design project focused on autonomous multirotor flight, navigation, and payload
+            delivery under operational constraints. Emphasis on system integration, repeatable
+            mission execution, and robustness.
+          </p>
+          <div class="meta">
+            <span>More details coming soon</span>
+          </div>
         </div>
       </div>
     </section>
@@ -112,7 +156,8 @@
     <section>
       <h2>Skills</h2>
       <p class="small">
-        MATLAB/Simulink • Python • Controls (PID, root locus, Bode/Nyquist) • Aero/propulsion fundamentals • CAD (if applicable) • Git
+        MATLAB/Simulink • Python • Aerospace dynamics • Propulsion fundamentals • Orbital mechanics •
+        Systems modeling • Optimization &amp; Monte Carlo simulation • Git
       </p>
     </section>
 
@@ -121,7 +166,9 @@
     <section>
       <h2>About</h2>
       <p class="small">
-        3–5 lines max. What you’re looking for + what you like working on + what kind of teams/problems you thrive in.
+        I enjoy working on engineering problems that sit at the intersection of modeling, analysis,
+        and real-world constraints. I’m pursuing a BSAEM, MSAEM, and MBA through an accelerated program,
+        and I’m drawn to multidisciplinary teams tackling complex technical systems.
       </p>
     </section>
 
@@ -132,7 +179,8 @@
 
   <script>
     const d = new Date();
-    document.getElementById("date").textContent = d.toLocaleDateString(undefined, { year:"numeric", month:"short", day:"numeric" });
+    document.getElementById("date").textContent =
+      d.toLocaleDateString(undefined, { year:"numeric", month:"short", day:"numeric" });
   </script>
 </body>
 </html>
