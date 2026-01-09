@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Joseph Kelly | Engineering Portfolio</title>
+  <meta name="description" content="Engineering portfolio for Joseph Kelly." />
+  <style>
+    :root { --bg:#0b0f19; --card:#121a2a; --text:#e8eefc; --muted:#a9b6d3; --accent:#7aa2ff; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; background:var(--bg); color:var(--text); }
+    a { color:var(--accent); text-decoration:none; }
+    a:hover { text-decoration:underline; }
+    .wrap { max-width: 920px; margin: 0 auto; padding: 32px 20px 60px; }
+    header { display:flex; gap:18px; align-items:flex-start; justify-content:space-between; flex-wrap:wrap; }
+    h1 { margin:0; font-size:34px; }
+    .muted { color:var(--muted); }
+    .links { display:flex; gap:12px; flex-wrap:wrap; }
+    .pill { padding:10px 12px; border:1px solid rgba(255,255,255,0.12); border-radius:999px; background: rgba(255,255,255,0.03); }
+    hr { border:0; border-top:1px solid rgba(255,255,255,0.1); margin:26px 0; }
+    .grid { display:grid; grid-template-columns:1fr; gap:14px; }
+    @media (min-width:820px){ .grid{ grid-template-columns:1fr 1fr; } }
+    .card { background:var(--card); border:1px solid rgba(255,255,255,0.1); border-radius:16px; padding:16px; }
+    .cover { width:100%; height:170px; border-radius:12px; overflow:hidden; border:1px solid rgba(255,255,255,0.1); margin-bottom:10px; }
+    .cover img { width:100%; height:100%; object-fit:cover; }
+    .actions { margin-top:10px; }
+    .btn { padding:9px 12px; border-radius:12px; border:1px solid rgba(255,255,255,0.12); background: rgba(255,255,255,0.03); }
+    footer { margin-top:26px; color:var(--muted); font-size:13px; }
+  </style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div>
+    <h1>Joseph Kelly</h1>
+    <p class="muted">Aerospace & Mechanical Engineering • Systems, Modeling, Testing</p>
+    <p class="muted">University of Alabama • Summer 2026 Internship</p>
+  </div>
+  <div class="links">
+    <a class="pill" href="https://github.com/jgkelly356" target="_blank">GitHub</a>
+    <a class="pill" href="#" target="_blank">Resume</a>
+    <a class="pill" href="#" target="_blank">LinkedIn</a>
+  </div>
+</header>
+
+<hr/>
+
+<section>
+  <h2>Projects</h2>
+  <div class="grid">
+
+    <!-- COPY THIS CARD PER PROJECT -->
+    <div class="card">
+      <div class="cover">
+        <img src="assets/img/bama2/cover.jpg" alt="BAMA-2 Drag Sail">
+      </div>
+      <h3>CubeSat Drag Sail Payload – BAMA-2</h3>
+      <p class="muted">Deployable drag-sail payload designed and validated through vacuum testing and reliability iteration.</p>
+      <div class="actions">
+        <a class="btn" href="projects/bama2.html">View project</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  Last updated: <span id="date"></span>
+</footer>
+
+</div>
+<script>
+  document.getElementById("date").textContent =
+    new Date().toLocaleDateString(undefined,{year:"numeric",month:"short",day:"numeric"});
+</script>
+</body>
+</html>
