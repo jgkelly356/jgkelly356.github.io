@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Project Title | Joseph Kelly</title>
+  <style>
+    :root { --bg:#0b0f19; --card:#121a2a; --text:#e8eefc; --muted:#a9b6d3; --accent:#7aa2ff; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; background:var(--bg); color:var(--text); }
+    a { color:var(--accent); text-decoration:none; }
+    .wrap { max-width: 900px; margin:0 auto; padding:32px 20px 60px; }
+    .back { margin-bottom:14px; display:inline-block; }
+    .hero { border-radius:16px; overflow:hidden; border:1px solid rgba(255,255,255,0.1); }
+    .hero img { width:100%; height:320px; object-fit:cover; }
+    .section { background:var(--card); border:1px solid rgba(255,255,255,0.1); border-radius:16px; padding:16px; margin-top:18px; }
+    .gallery { display:grid; grid-template-columns:1fr; gap:12px; }
+    @media (min-width:760px){ .gallery{ grid-template-columns:1fr 1fr; } }
+    .fig { border-radius:14px; overflow:hidden; border:1px solid rgba(255,255,255,0.1); }
+    .fig img { width:100%; height:240px; object-fit:cover; }
+    .cap { padding:10px 12px; color:var(--muted); font-size:13px; }
+  </style>
+</head>
+<body>
+<div class="wrap">
+
+<a class="back" href="../index.html">← Back to portfolio</a>
+
+<h1>Project Title</h1>
+<p class="muted">One-sentence description of what this project is and why it matters.</p>
+
+<div class="hero">
+  <img src="../assets/img/PROJECT_SLUG/cover.jpg" alt="Project cover">
+</div>
+
+<div class="section">
+  <h2>Reality</h2>
+  <div class="gallery">
+    <div class="fig">
+      <img src="../assets/img/PROJECT_SLUG/reality-01.jpg">
+      <div class="cap">What this image shows (real artifact / test / run).</div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>Engineering Thinking</h2>
+  <div class="gallery">
+    <div class="fig">
+      <img src="../assets/img/PROJECT_SLUG/think-01.png">
+      <div class="cap">Architecture, trade, or decision rationale.</div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>Results</h2>
+  <div class="gallery">
+    <div class="fig">
+      <img src="../assets/img/PROJECT_SLUG/results-01.png">
+      <div class="cap">What changed, how it was measured.</div>
+    </div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>
